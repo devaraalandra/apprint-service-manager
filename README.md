@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is the final assignment for the OOP course (Group 18). The application, APPrint, is a Windows Forms application that allows administrators, managers, workers, and customers to manage user accounts, generate reports, handle requests, and perform various tasks. The project is implemented using C# and .NET Framework, with a SQL Server database for storing user data and other information.
+This project is the final assignment for my OOP Course. The application, APPrint, is a Windows Forms application that allows administrators, managers, workers, and customers to manage user accounts, generate reports, handle requests, and perform various tasks. The project is implemented using C# and .NET Framework, with a SQL Server database for storing user data and other information.
 
 ## Features
 
