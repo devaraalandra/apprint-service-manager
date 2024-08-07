@@ -44,6 +44,16 @@ This project is the final assignment for my OOP Course. The application, APPrint
 - .NET Framework 4.7.2 or later
 - SQL Server
 
+# Screenshots
+
+![screenshot 1](https://github.com/devaraalandra/apprint-service-manager/blob/main/img/Screenshot%202024-08-07%20211907.png?raw=true)
+
+![screenshot 2](https://github.com/devaraalandra/apprint-service-manager/blob/main/img/Screenshot%202024-08-07%20212002.png?raw=true)
+
+![screenshot 3](https://github.com/devaraalandra/apprint-service-manager/blob/main/img/Screenshot%202024-08-07%20212017.png?raw=true)
+
+![screenshot 4](https://github.com/devaraalandra/apprint-service-manager/blob/main/img/Screenshot%202024-08-07%20212054.png?raw=true)
+
 ### Installation
 
 1. Clone the repository:
