@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA5C3632-6771-45D0-B77A-2A0C48834F59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP_G18_Final_Assignment_APPrint</RootNamespace>
+    <AssemblyName>OOP_G18_Final Assignment_APPrint</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Section\AdmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmEditUser.Designer.cs">
+      <DependentUpon>AdmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmHomePage.Designer.cs">
+      <DependentUpon>AdmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmRegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmRegisterUser.Designer.cs">
+      <DependentUpon>AdmRegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmReport.Designer.cs">
+      <DependentUpon>AdmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportCustomer.Designer.cs">
+      <DependentUpon>AdmReportCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportRequest.Designer.cs">
+      <DependentUpon>AdmReportRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportYearly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmReportYearly.Designer.cs">
+      <DependentUpon>AdmReportYearly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\AdmUserEditConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Section\AdmUserEditConfirm.Designer.cs">
+      <DependentUpon>AdmUserEditConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Section\Admin Classes\GenerateReport.cs" />
+    <Compile Include="Admin Section\Admin Classes\UserChecker.cs" />
+    <Compile Include="Customer Section\CusEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusEditProfile.Designer.cs">
+      <DependentUpon>CusEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Section\CusRequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusRequestPage.Designer.cs">
+      <DependentUpon>CusRequestPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Section\Customer Classes\CalcService.cs" />
+    <Compile Include="Customer Section\CusEditProfConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusEditProfConfirm.Designer.cs">
+      <DependentUpon>CusEditProfConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Section\CusHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusHomePage.Designer.cs">
+      <DependentUpon>CusHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.cs" />
+    <Compile Include="Customer Section\Customer Classes\GetRequest.cs" />
+    <Compile Include="Customer Section\Customer Classes\UserUpdateRequest.cs" />
+    <Compile Include="Customer Section\CusViewServicesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusViewServicesPage.Designer.cs">
+      <DependentUpon>CusViewServicesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Section\CusViewStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Section\CusViewStatus.Designer.cs">
+      <DependentUpon>CusViewStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSession.cs" />
+    <Compile Include="APPrint_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APPrint_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Manager Section\AssignJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Section\AssignJob.Designer.cs">
+      <DependentUpon>AssignJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Section\ManEditProfConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Section\ManEditProfConfirm.Designer.cs">
+      <DependentUpon>ManEditProfConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Section\ManEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Section\ManEditProfile.Designer.cs">
+      <DependentUpon>ManEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Section\ManHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Section\ManHomePage.Designer.cs">
+      <DependentUpon>ManHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Section\ManViewMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Section\ManViewMode.Designer.cs">
+      <DependentUpon>ManViewMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Worker Section\WorEditProfConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Section\WorEditProfConfirm.Designer.cs">
+      <DependentUpon>WorEditProfConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker Section\WorEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Section\WorEditProfile.Designer.cs">
+      <DependentUpon>WorEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker Section\WorHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Section\WorHomePage.Designer.cs">
+      <DependentUpon>WorHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker Section\Worker Classes\Assignment.cs" />
+    <Compile Include="Worker Section\Worker Classes\Request.cs" />
+    <Compile Include="Worker Section\Worker Classes\WorDatabaseHelper.cs" />
+    <Compile Include="Worker Section\WorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Section\WorUpdate.Designer.cs">
+      <DependentUpon>WorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker Section\WorViewPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Section\WorViewPage.Designer.cs">
+      <DependentUpon>WorViewPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Section\AdmEditUser.resx">
+      <DependentUpon>AdmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmHomePage.resx">
+      <DependentUpon>AdmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmRegisterUser.resx">
+      <DependentUpon>AdmRegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmReport.resx">
+      <DependentUpon>AdmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmReportRequest.resx">
+      <DependentUpon>AdmReportRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmReportYearly.resx">
+      <DependentUpon>AdmReportYearly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Section\AdmUserEditConfirm.resx">
+      <DependentUpon>AdmUserEditConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusEditProfConfirm.resx">
+      <DependentUpon>CusEditProfConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusEditProfile.resx">
+      <DependentUpon>CusEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusHomePage.resx">
+      <DependentUpon>CusHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusRequestPage.resx">
+      <DependentUpon>CusRequestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusViewServicesPage.resx">
+      <DependentUpon>CusViewServicesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Section\CusViewStatus.resx">
+      <DependentUpon>CusViewStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Section\AssignJob.resx">
+      <DependentUpon>AssignJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Section\ManEditProfConfirm.resx">
+      <DependentUpon>ManEditProfConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Section\ManEditProfile.resx">
+      <DependentUpon>ManEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Section\ManHomePage.resx">
+      <DependentUpon>ManHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Worker Section\WorHomePage.resx">
+      <DependentUpon>WorHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker Section\WorViewPage.resx">
+      <DependentUpon>WorViewPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="APPrint_DatabaseDataSet.xsc">
+      <DependentUpon>APPrint_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="APPrint_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>APPrint_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="APPrint_DatabaseDataSet.xss">
+      <DependentUpon>APPrint_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
